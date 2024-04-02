@@ -8,3 +8,11 @@ With our newly added tools, like CSS Grid, we are going to tackle a new project 
     - Projects
     - Announcements
     - Trending
+
+## Tasks
+
+- [] Populate page with dummy text
+- [] Create grid for entire page
+- [] Create grid for sidebar
+- [] Create grid for header
+- [] Create grid for main content
