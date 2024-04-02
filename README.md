@@ -11,8 +11,8 @@ With our newly added tools, like CSS Grid, we are going to tackle a new project 
 
 ## Tasks
 
-- [] Populate page with dummy text
-- [] Create grid for entire page
+- [x] Populate page with dummy text
+- [x] Create grid for entire page
 - [] Create grid for sidebar
 - [] Create grid for header
 - [] Create grid for main content
