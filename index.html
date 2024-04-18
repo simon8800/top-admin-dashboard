@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>Pigeon Admin Dashboard</title>
   </head>
@@ -10,7 +16,12 @@
     <div class="header">
       <div class="row-1">
         <div class="search">
-          <span><img src="./Assets/magnify.svg" alt="magnifying glass" /></span>
+          <span
+            ><img
+              class="search__image"
+              src="./Assets/magnify.svg"
+              alt="magnifying glass"
+          /></span>
           <input type="search" name="search-bar" id="search-bar" />
         </div>
         <div class="user">Morgan Oakley</div>
@@ -27,87 +38,150 @@
     <div class="sidebar">
       <h1>Dashboard</h1>
       <div class="sidebar-actions">
-        <div class="actions"><span><img src="./Assets/home.svg" alt=""></span>Home</div>
-        <div class="actions"><span><img src="./Assets/account-box.svg" alt=""></span>Profile</div>
-        <div class="actions"><span><img src="./Assets/message-reply.svg" alt=""></span>Messages</div>
-        <div class="actions"><span><img src="./Assets/history.svg" alt=""></span>History</div>
-        <div class="actions"><span><img src="./Assets/clipboard-list.svg" alt=""></span>Tasks</div>
-        <div class="actions"><span><img src="./Assets/account-group.svg" alt=""></span>Communities</div>
+        <div class="actions">
+          <span
+            ><img
+              class="actions__images"
+              src="./Assets/home.svg"
+              alt="" /></span
+          >Home
+        </div>
+        <div class="actions">
+          <span
+            ><img
+              class="actions__images"
+              src="./Assets/account-box.svg"
+              alt="" /></span
+          >Profile
+        </div>
+        <div class="actions">
+          <span
+            ><img
+              class="actions__images"
+              src="./Assets/message-reply.svg"
+              alt="" /></span
+          >Messages
+        </div>
+        <div class="actions">
+          <span
+            ><img
+              class="actions__images"
+              src="./Assets/history.svg"
+              alt="" /></span
+          >History
+        </div>
+        <div class="actions">
+          <span
+            ><img
+              class="actions__images"
+              src="./Assets/clipboard-list.svg"
+              alt="" /></span
+          >Tasks
+        </div>
+        <div class="actions">
+          <span
+            ><img
+              class="actions__images"
+              src="./Assets/account-group.svg"
+              alt="" /></span
+          >Communities
+        </div>
       </div>
       <div class="sidebar-help">
-        <div class="help"><span><img src="./Assets/cog.svg" alt=""></span>Settings</div>
-        <div class="help"><span><img src="./Assets/help-box.svg" alt=""></span>Support</div>
-        <div class="help"><span><img src="./Assets/shield-check.svg" alt=""></span>Privacy</div>
+        <div class="help">
+          <span
+            ><img class="actions__images" src="./Assets/cog.svg" alt="" /></span
+          >Settings
+        </div>
+        <div class="help">
+          <span
+            ><img
+              class="actions__images"
+              src="./Assets/help-box.svg"
+              alt="" /></span
+          >Support
+        </div>
+        <div class="help">
+          <span
+            ><img
+              class="actions__images"
+              src="./Assets/shield-check.svg"
+              alt="" /></span
+          >Privacy
+        </div>
       </div>
     </div>
     <div class="main-content">
       <div class="projects">
         <h2>Your Projects</h2>
-        <div class="project-card">
-          <h3>Super Cool Project</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut minus
-            voluptatem cum, animi error voluptatibus enim temporibus alias sint
-            earum. Numquam dolore nobis natus repudiandae tenetur tempora, et
-            nostrum laboriosam!
-          </p>
-        </div>
-        <div class="project-card">
-          <h3>Super Cool Project</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut minus
-            voluptatem cum, animi error voluptatibus enim temporibus alias sint
-            earum. Numquam dolore nobis natus repudiandae tenetur tempora, et
-            nostrum laboriosam!
-          </p>
-        </div>
-        <div class="project-card">
-          <h3>Super Cool Project</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut minus
-            voluptatem cum, animi error voluptatibus enim temporibus alias sint
-            earum. Numquam dolore nobis natus repudiandae tenetur tempora, et
-            nostrum laboriosam!
-          </p>
-        </div>
-        <div class="project-card">
-          <h3>Super Cool Project</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut minus
-            voluptatem cum, animi error voluptatibus enim temporibus alias sint
-            earum. Numquam dolore nobis natus repudiandae tenetur tempora, et
-            nostrum laboriosam!
-          </p>
-        </div>
-        <div class="project-card">
-          <h3>Super Cool Project</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut minus
-            voluptatem cum, animi error voluptatibus enim temporibus alias sint
-            earum. Numquam dolore nobis natus repudiandae tenetur tempora, et
-            nostrum laboriosam!
-          </p>
-        </div>
-        <div class="project-card">
-          <h3>Super Cool Project</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut minus
-            voluptatem cum, animi error voluptatibus enim temporibus alias sint
-            earum. Numquam dolore nobis natus repudiandae tenetur tempora, et
-            nostrum laboriosam!
-          </p>
+        <div class="project-container">
+          
+          <div class="project-card">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut minus
+              voluptatem cum, animi error voluptatibus enim temporibus alias sint
+              earum. Numquam dolore nobis natus repudiandae tenetur tempora, et
+              nostrum laboriosam!
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut minus
+              voluptatem cum, animi error voluptatibus enim temporibus alias sint
+              earum. Numquam dolore nobis natus repudiandae tenetur tempora, et
+              nostrum laboriosam!
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut minus
+              voluptatem cum, animi error voluptatibus enim temporibus alias sint
+              earum. Numquam dolore nobis natus repudiandae tenetur tempora, et
+              nostrum laboriosam!
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut minus
+              voluptatem cum, animi error voluptatibus enim temporibus alias sint
+              earum. Numquam dolore nobis natus repudiandae tenetur tempora, et
+              nostrum laboriosam!
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut minus
+              voluptatem cum, animi error voluptatibus enim temporibus alias sint
+              earum. Numquam dolore nobis natus repudiandae tenetur tempora, et
+              nostrum laboriosam!
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut minus
+              voluptatem cum, animi error voluptatibus enim temporibus alias sint
+              earum. Numquam dolore nobis natus repudiandae tenetur tempora, et
+              nostrum laboriosam!
+            </p>
+          </div>
         </div>
       </div>
       <div class="announcements">
         <h3>Announcements</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-          illum tempore mollitia nostrum corporis molestiae possimus aliquid,
-          aut optio rerum molestias quaerat dolore veniam odio excepturi
-          voluptas dolorem explicabo facere!
-        </p>
         <div class="annoucement-item">
           <h4>Site Maintenance</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            illum tempore mollitia nostrum corporis molestiae possimus aliquid,
+            aut optio rerum molestias quaerat dolore veniam odio excepturi
+            voluptas dolorem explicabo facere!
+          </p>
         </div>
         <div class="annoucement-item">
           <h4>Community Share Day</h4>
@@ -131,41 +205,49 @@
       <div class="trending">
         <h3>Trending</h3>
         <div class="trending-user">
-					<div class="user-pfp">
-						<span class="user-pfp"><img src="./Assets/pigeon-1.png" alt=""></span>
-					</div>
-					<div class="user-handle">
-						<p>@morgan</p>
-						<p>Super Cool Project</p>
-					</div>
-				</div>
+          <div class="user-pfp">
+            <span class="user-pfp"
+              ><img class="trending__image" src="./Assets/pigeon-1.png" alt=""
+            /></span>
+          </div>
+          <div class="user-handle">
+            <p>@morgan</p>
+            <p>Super Cool Project</p>
+          </div>
+        </div>
         <div class="trending-user">
-					<div class="user-pfp">
-						<span class="user-pfp"><img src="./Assets/pigeon-1.png" alt=""></span>
-					</div>
-					<div class="user-handle">
-						<p>@morgan</p>
-						<p>Super Cool Project</p>
-					</div>
-				</div>
+          <div class="user-pfp">
+            <span class="user-pfp"
+              ><img class="trending__image" src="./Assets/pigeon-1.png" alt=""
+            /></span>
+          </div>
+          <div class="user-handle">
+            <p>@morgan</p>
+            <p>Super Cool Project</p>
+          </div>
+        </div>
         <div class="trending-user">
-					<div class="user-pfp">
-						<span class="user-pfp"><img src="./Assets/pigeon-1.png" alt=""></span>
-					</div>
-					<div class="user-handle">
-						<p>@morgan</p>
-						<p>Super Cool Project</p>
-					</div>
-				</div>
+          <div class="user-pfp">
+            <span class="user-pfp"
+              ><img class="trending__image" src="./Assets/pigeon-1.png" alt=""
+            /></span>
+          </div>
+          <div class="user-handle">
+            <p>@morgan</p>
+            <p>Super Cool Project</p>
+          </div>
+        </div>
         <div class="trending-user">
-					<div class="user-pfp">
-						<span class="user-pfp"><img src="./Assets/pigeon-1.png" alt=""></span>
-					</div>
-					<div class="user-handle">
-						<p>@morgan</p>
-						<p>Super Cool Project</p>
-					</div>
-				</div>
+          <div class="user-pfp">
+            <span class="user-pfp"
+              ><img class="trending__image" src="./Assets/pigeon-1.png" alt=""
+            /></span>
+          </div>
+          <div class="user-handle">
+            <p>@morgan</p>
+            <p>Super Cool Project</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
