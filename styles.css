@@ -19,12 +19,25 @@ body {
 
 .header {
     grid-area: header;
+    display: grid;
+    grid-template-rows: 1 / 2;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-actions {
+    display: flex;
 }
 
 .sidebar {
     grid-area: sidebar;
     background-color: #3b82f6;
     color: #fff;
+    padding-left: 1em;
 }
 
 .main-content {
@@ -50,23 +63,37 @@ body {
     grid-column: 2 / 3;
 }
 
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
 
 .search {
-    width: 50px;
+    display: flex;
+    width: 50%;
+}
+
+.search-bar {
+    width: 150%;
+    align-self: flex-start;
 }
 
 .search__image {
-    max-width: 100%;
+    width: 25px;
     height: auto;
 }
 
 .actions, .help {
-    width: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
-.actions_images {
-    max-width: 100%;
-    height: auto;
+.actions__images {
+    width: 25px;
 }
 
 .user-pfp {
@@ -87,6 +114,36 @@ body {
 
 .project-card {
     background-color: #fff;
-    height: 300px;
-    width: 300px;
+    box-shadow: -5px 0px 0px 0px orange;
+    margin: 25px;
+    border-radius: 10px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement-container > *:not(:last-child) {
+    border-bottom: 1px solid grey;;
+}
+
+.project-card__engagement {
+    align-self: flex-end;
+    display: flex;
+}
+
+.project-card__icon {
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+
+.trending-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2em;
+}
+
+.trending-user {
+    display: flex;
 }
